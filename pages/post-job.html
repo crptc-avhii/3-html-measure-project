@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Post a Job | CareerConnect</title>
+
+    <meta name="description"
+        content="Employers can share job opportunities and connect with talented candidates through CareerConnect.">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+
+        <h1>CareerConnect</h1>
+
+        <p>Connecting Talent With Opportunities</p>
+
+        <nav>
+
+            <a href="../index.html">Home</a> |
+            <a href="jobs.html">Find Jobs</a> |
+            <a href="companies.html">Companies</a> |
+            <a href="post-job.html">Post a Job</a> |
+            <a href="contact.html">Contact Us</a> |
+            <a href="login.html">Login</a> |
+            <a href="signup.html">Sign Up</a>
+
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- Page Introduction -->
+
+        <section>
+
+            <h2>Post a Job Opportunity</h2>
+
+            <p>
+                Looking for talented candidates?
+                Share your job opening on CareerConnect
+                and connect with potential employees.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Job Posting Form -->
+
+        <section>
+
+            <h2>Job Posting Form</h2>
+
+            <form action="#" method="post">
+
+                <!-- Employer Information -->
+
+                <fieldset>
+
+                    <legend>Employer Information</legend>
+
+                    <br>
+
+                    <label for="employer-name">Your Full Name:</label>
+                    <br>
+
+                    <input type="text" id="employer-name" name="employer_name" placeholder="Enter your full name"
+                        required autocomplete="name">
+
+                    <br><br>
+
+                    <label for="employer-email">Official Email Address:</label>
+                    <br>
+
+                    <input type="email" id="employer-email" name="employer_email"
+                        placeholder="Enter your official email" required autocomplete="email">
+
+                    <br><br>
+
+                    <label for="employer-phone">Contact Number:</label>
+                    <br>
+
+                    <input type="tel" id="employer-phone" name="employer_phone"
+                        placeholder="Enter 10 digit mobile number" pattern="[0-9]{10}" required>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Company Details -->
+
+                <fieldset>
+
+                    <legend>Company Details</legend>
+
+                    <br>
+
+                    <label for="company-name">Company Name:</label>
+                    <br>
+
+                    <input type="text" id="company-name" name="company_name" placeholder="Enter company name" required>
+
+                    <br><br>
+
+                    <label for="company-website">Company Website:</label>
+                    <br>
+
+                    <input type="url" id="company-website" name="company_website" placeholder="https://www.example.com">
+
+                    <br><br>
+
+                    <label for="industry">Industry:</label>
+                    <br>
+
+                    <select id="industry" name="industry" required>
+
+                        <option value="">Select Industry</option>
+                        <option value="it">Information Technology</option>
+                        <option value="software">Software Development</option>
+                        <option value="banking">Banking and Finance</option>
+                        <option value="education">Education</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="marketing">Digital Marketing</option>
+                        <option value="other">Other</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="company-description">About Your Company:</label>
+                    <br>
+
+                    <textarea id="company-description" name="company_description" rows="4" cols="40"
+                        placeholder="Write a short description about your company"></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Job Information -->
+
+                <fieldset>
+
+                    <legend>Job Information</legend>
+
+                    <br>
+
+                    <label for="job-title">Job Title:</label>
+                    <br>
+
+                    <input type="text" id="job-title" name="job_title" placeholder="e.g. Frontend Developer" required>
+
+                    <br><br>
+
+                    <label for="job-category">Job Category:</label>
+                    <br>
+
+                    <select id="job-category" name="job_category" required>
+
+                        <option value="">Select Category</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="software-engineering">Software Engineering</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="artificial-intelligence">Artificial Intelligence</option>
+                        <option value="design">Graphic Designing</option>
+                        <option value="marketing">Digital Marketing</option>
+                        <option value="other">Other</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="job-location">Job Location:</label>
+                    <br>
+
+                    <input type="text" id="job-location" name="job_location" placeholder="Enter city or location"
+                        required>
+
+                    <br><br>
+
+                    <label for="job-type">Employment Type:</label>
+                    <br>
+
+                    <select id="job-type" name="job_type" required>
+
+                        <option value="">Select Employment Type</option>
+                        <option value="full-time">Full Time</option>
+                        <option value="part-time">Part Time</option>
+                        <option value="internship">Internship</option>
+                        <option value="contract">Contract</option>
+                        <option value="freelance">Freelance</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="work-mode">Work Mode:</label>
+                    <br>
+
+                    <select id="work-mode" name="work_mode" required>
+
+                        <option value="">Select Work Mode</option>
+                        <option value="onsite">On-site</option>
+                        <option value="remote">Remote</option>
+                        <option value="hybrid">Hybrid</option>
+
+                    </select>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Salary Information -->
+
+                <fieldset>
+
+                    <legend>Salary Information</legend>
+
+                    <br>
+
+                    <label for="min-salary">Minimum Annual Salary (INR):</label>
+                    <br>
+
+                    <input type="number" id="min-salary" name="min_salary" min="0" placeholder="e.g. 300000">
+
+                    <br><br>
+
+                    <label for="max-salary">Maximum Annual Salary (INR):</label>
+                    <br>
+
+                    <input type="number" id="max-salary" name="max_salary" min="0" placeholder="e.g. 500000">
+
+                </fieldset>
+
+                <br>
+
+                <!-- Requirements -->
+
+                <fieldset>
+
+                    <legend>Job Requirements</legend>
+
+                    <br>
+
+                    <label for="qualification">Required Qualification:</label>
+                    <br>
+
+                    <select id="qualification" name="qualification">
+
+                        <option value="">Select Qualification</option>
+                        <option value="12th">12th Pass</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="bca">BCA</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="bsc">B.Sc</option>
+                        <option value="mca">MCA</option>
+                        <option value="other">Other</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="experience">Required Experience:</label>
+                    <br>
+
+                    <select id="experience" name="experience" required>
+
+                        <option value="">Select Experience</option>
+                        <option value="fresher">Fresher</option>
+                        <option value="0-1">0-1 Years</option>
+                        <option value="1-3">1-3 Years</option>
+                        <option value="3-5">3-5 Years</option>
+                        <option value="5+">5+ Years</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="skills">Required Skills:</label>
+                    <br>
+
+                    <textarea id="skills" name="required_skills" rows="4" cols="40"
+                        placeholder="e.g. HTML, CSS, JavaScript, React" required></textarea>
+
+                    <br><br>
+
+                    <label for="job-description">Job Description:</label>
+                    <br>
+
+                    <textarea id="job-description" name="job_description" rows="7" cols="45"
+                        placeholder="Describe the job role, responsibilities and requirements" required></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Application Deadline -->
+
+                <fieldset>
+
+                    <legend>Application Details</legend>
+
+                    <br>
+
+                    <label for="vacancies">Number of Vacancies:</label>
+                    <br>
+
+                    <input type="number" id="vacancies" name="vacancies" min="1" placeholder="e.g. 5">
+
+                    <br><br>
+
+                    <label for="deadline">Application Deadline:</label>
+                    <br>
+
+                    <input type="date" id="deadline" name="deadline" required>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Declaration -->
+
+                <section>
+
+                    <input type="checkbox" id="declaration" name="declaration" value="accepted" required>
+
+                    <label for="declaration">
+                        I confirm that the job information provided
+                        is accurate and belongs to my organization.
+                    </label>
+
+                </section>
+
+                <br>
+
+                <button type="submit">Submit Job Posting</button>
+
+                <button type="reset">Reset Form</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>CareerConnect</h2>
+
+        <p>Connecting Talent With Opportunities.</p>
+
+        <nav>
+
+            <a href="../index.html">Home</a> |
+            <a href="jobs.html">Find Jobs</a> |
+            <a href="companies.html">Companies</a> |
+            <a href="contact.html">Contact Us</a>
+
+        </nav>
+
+        <p>Copyright © 2026 CareerConnect. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>

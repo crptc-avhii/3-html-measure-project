@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apply for Job | CareerConnect</title>
+
+    <meta name="description" content="Submit your job application through CareerConnect.">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+
+        <h1>CareerConnect</h1>
+
+        <p>Connecting Talent With Opportunities</p>
+
+        <nav>
+
+            <a href="../index.html">Home</a> |
+            <a href="jobs.html">Find Jobs</a> |
+            <a href="companies.html">Companies</a> |
+            <a href="post-job.html">Post a Job</a> |
+            <a href="contact.html">Contact Us</a> |
+            <a href="login.html">Login</a> |
+            <a href="signup.html">Sign Up</a>
+
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- Page Introduction -->
+
+        <section>
+
+            <h2>Apply for a Job</h2>
+
+            <p>
+                Complete the application form below and provide
+                your details to apply for this opportunity.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Selected Job Information -->
+
+        <section>
+
+            <h2>Job Information</h2>
+
+            <p><strong>Job Title:</strong> Frontend Developer</p>
+
+            <p><strong>Company:</strong> Tech Solutions Pvt. Ltd.</p>
+
+            <p><strong>Location:</strong> Noida, Uttar Pradesh</p>
+
+            <p><strong>Salary:</strong> ₹3 - 5 LPA</p>
+
+            <p><strong>Job Type:</strong> Full Time</p>
+
+            <a href="job-details.html">View Complete Job Details</a>
+
+        </section>
+
+        <hr>
+
+        <!-- Application Form -->
+
+        <section>
+
+            <h2>Application Details</h2>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <!-- Personal Details -->
+
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+                    <br>
+
+                    <label for="fullname">Full Name:</label>
+                    <br>
+
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required
+                        autocomplete="name">
+
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <br>
+
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required
+                        autocomplete="email">
+
+                    <br><br>
+
+                    <label for="phone">Mobile Number:</label>
+                    <br>
+
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" pattern="[0-9]{10}"
+                        required>
+
+                    <br><br>
+
+                    <label for="address">Current Address:</label>
+                    <br>
+
+                    <textarea id="address" name="address" rows="4" cols="35" placeholder="Enter your current address"
+                        required></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Education Details -->
+
+                <fieldset>
+
+                    <legend>Education Details</legend>
+
+                    <br>
+
+                    <label for="qualification">Highest Qualification:</label>
+                    <br>
+
+                    <select id="qualification" name="qualification" required>
+
+                        <option value="">Select Qualification</option>
+                        <option value="bca">BCA</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="bsc">B.Sc</option>
+                        <option value="mca">MCA</option>
+                        <option value="mtech">M.Tech</option>
+                        <option value="other">Other</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="college">College / University:</label>
+                    <br>
+
+                    <input type="text" id="college" name="college" placeholder="Enter college name" required>
+
+                    <br><br>
+
+                    <label for="passing-year">Passing Year:</label>
+                    <br>
+
+                    <input type="number" id="passing-year" name="passing-year" min="2000" max="2035"
+                        placeholder="e.g. 2027">
+
+                    <br><br>
+
+                    <label for="percentage">Percentage / CGPA:</label>
+                    <br>
+
+                    <input type="text" id="percentage" name="percentage" placeholder="Enter your percentage or CGPA">
+
+                </fieldset>
+
+                <br>
+
+                <!-- Technical Skills -->
+
+                <fieldset>
+
+                    <legend>Technical Skills</legend>
+
+                    <p>Select your technical skills:</p>
+
+                    <input type="checkbox" id="html" name="skills[]" value="HTML">
+                    <label for="html">HTML</label>
+
+                    <br>
+
+                    <input type="checkbox" id="css" name="skills[]" value="CSS">
+                    <label for="css">CSS</label>
+
+                    <br>
+
+                    <input type="checkbox" id="javascript" name="skills[]" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+
+                    <br>
+
+                    <input type="checkbox" id="react" name="skills[]" value="React">
+                    <label for="react">React.js</label>
+
+                    <br>
+
+                    <input type="checkbox" id="node" name="skills[]" value="Node.js">
+                    <label for="node">Node.js</label>
+
+                    <br>
+
+                    <input type="checkbox" id="mongodb" name="skills[]" value="MongoDB">
+                    <label for="mongodb">MongoDB</label>
+
+                    <br>
+
+                    <input type="checkbox" id="python" name="skills[]" value="Python">
+                    <label for="python">Python</label>
+
+                    <br>
+
+                    <input type="checkbox" id="java" name="skills[]" value="Java">
+                    <label for="java">Java</label>
+
+                    <br><br>
+
+                    <label for="other-skills">Other Skills:</label>
+                    <br>
+
+                    <textarea id="other-skills" name="other-skills" rows="3" cols="35"
+                        placeholder="Mention other skills"></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Work Experience -->
+
+                <fieldset>
+
+                    <legend>Work Experience</legend>
+
+                    <br>
+
+                    <label for="experience">Experience Level:</label>
+                    <br>
+
+                    <select id="experience" name="experience" required>
+
+                        <option value="">Select Experience</option>
+                        <option value="fresher">Fresher</option>
+                        <option value="0-1">0-1 Years</option>
+                        <option value="1-3">1-3 Years</option>
+                        <option value="3-5">3-5 Years</option>
+                        <option value="5+">5+ Years</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="previous-company">Previous Company:</label>
+                    <br>
+
+                    <input type="text" id="previous-company" name="previous-company"
+                        placeholder="Enter previous company">
+
+                </fieldset>
+
+                <br>
+
+                <!-- Resume Upload -->
+
+                <fieldset>
+
+                    <legend>Upload Resume</legend>
+
+                    <br>
+
+                    <label for="resume">Upload Your Resume:</label>
+                    <br>
+
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+                    <p>Accepted formats: PDF, DOC and DOCX.</p>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Cover Letter -->
+
+                <fieldset>
+
+                    <legend>Cover Letter</legend>
+
+                    <br>
+
+                    <label for="cover-letter">
+                        Why should we consider you for this position?
+                    </label>
+
+                    <br>
+
+                    <textarea id="cover-letter" name="cover-letter" rows="7" cols="45"
+                        placeholder="Write a short introduction about yourself and explain why you are suitable for this job."></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Declaration -->
+
+                <section>
+
+                    <input type="checkbox" id="declaration" name="declaration" value="accepted" required>
+
+                    <label for="declaration">
+                        I confirm that the information provided
+                        by me is correct and complete.
+                    </label>
+
+                </section>
+
+                <br>
+
+                <button type="submit">Submit Application</button>
+
+                <button type="reset">Reset Form</button>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <!-- Back to Jobs -->
+
+        <section>
+
+            <p>
+                Looking for other opportunities?
+                <a href="jobs.html">Browse More Jobs</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>CareerConnect</h2>
+
+        <p>Connecting Talent With Opportunities.</p>
+
+        <nav>
+
+            <a href="../index.html">Home</a> |
+            <a href="jobs.html">Find Jobs</a> |
+            <a href="companies.html">Companies</a> |
+            <a href="contact.html">Contact Us</a>
+
+        </nav>
+
+        <p>2026 CareerConnect. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>

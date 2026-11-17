@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | CareerConnect</title>
+
+    <meta name="description" content="Create your CareerConnect account and explore job opportunities.">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+
+        <h1>CareerConnect</h1>
+
+        <p>Connecting Talent With Opportunities</p>
+
+        <nav>
+
+            <a href="../index.html">Home</a> |
+            <a href="jobs.html">Find Jobs</a> |
+            <a href="companies.html">Companies</a> |
+            <a href="post-job.html">Post a Job</a> |
+            <a href="contact.html">Contact Us</a> |
+            <a href="login.html">Login</a> |
+            <a href="signup.html">Sign Up</a>
+
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section>
+
+            <h2>Create Your Account</h2>
+
+            <p>
+                Join CareerConnect and discover opportunities
+                that match your skills and career goals.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Registration Form -->
+
+        <section>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <!-- Personal Information -->
+
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+                    <br>
+
+                    <label for="fullname">Full Name:</label>
+                    <br>
+
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required
+                        autocomplete="name">
+
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <br>
+
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required
+                        autocomplete="email">
+
+                    <br><br>
+
+                    <label for="phone">Mobile Number:</label>
+                    <br>
+
+                    <input type="tel" id="phone" name="phone" placeholder="Enter 10 digit mobile number"
+                        pattern="[0-9]{10}" required autocomplete="tel">
+
+                    <br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <br>
+
+                    <input type="date" id="dob" name="dob">
+
+                    <br><br>
+
+                    <label for="gender">Gender:</label>
+                    <br>
+
+                    <select id="gender" name="gender">
+
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="address">Address:</label>
+                    <br>
+
+                    <textarea id="address" name="address" rows="4" cols="35"
+                        placeholder="Enter your address"></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Education Information -->
+
+                <fieldset>
+
+                    <legend>Education Details</legend>
+
+                    <br>
+
+                    <label for="qualification">Highest Qualification:</label>
+                    <br>
+
+                    <select id="qualification" name="qualification" required>
+
+                        <option value="">Select Qualification</option>
+                        <option value="12th">12th Pass</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="bca">BCA</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="bsc">B.Sc</option>
+                        <option value="mca">MCA</option>
+                        <option value="mtech">M.Tech</option>
+                        <option value="other">Other</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="college">College / University:</label>
+                    <br>
+
+                    <input type="text" id="college" name="college" placeholder="Enter your college name">
+
+                    <br><br>
+
+                    <label for="passing-year">Passing Year:</label>
+                    <br>
+
+                    <input type="number" id="passing-year" name="passing-year" min="2000" max="2035"
+                        placeholder="e.g. 2027">
+
+                </fieldset>
+
+                <br>
+
+                <!-- Skills -->
+
+                <fieldset>
+
+                    <legend>Professional Skills</legend>
+
+                    <p>Select the skills you have:</p>
+
+                    <input type="checkbox" id="html" name="skills[]" value="HTML">
+                    <label for="html">HTML</label>
+
+                    <br>
+
+                    <input type="checkbox" id="css" name="skills[]" value="CSS">
+                    <label for="css">CSS</label>
+
+                    <br>
+
+                    <input type="checkbox" id="javascript" name="skills[]" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+
+                    <br>
+
+                    <input type="checkbox" id="react" name="skills[]" value="React">
+                    <label for="react">React.js</label>
+
+                    <br>
+
+                    <input type="checkbox" id="node" name="skills[]" value="Node.js">
+                    <label for="node">Node.js</label>
+
+                    <br>
+
+                    <input type="checkbox" id="mongodb" name="skills[]" value="MongoDB">
+                    <label for="mongodb">MongoDB</label>
+
+                    <br>
+
+                    <input type="checkbox" id="python" name="skills[]" value="Python">
+                    <label for="python">Python</label>
+
+                    <br>
+
+                    <input type="checkbox" id="java" name="skills[]" value="Java">
+                    <label for="java">Java</label>
+
+                    <br><br>
+
+                    <label for="other-skills">Other Skills:</label>
+                    <br>
+
+                    <textarea id="other-skills" name="other-skills" rows="3" cols="35"
+                        placeholder="Mention other skills"></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Work Experience -->
+
+                <fieldset>
+
+                    <legend>Work Experience</legend>
+
+                    <br>
+
+                    <label for="experience">Experience Level:</label>
+                    <br>
+
+                    <select id="experience" name="experience">
+
+                        <option value="">Select Experience</option>
+                        <option value="fresher">Fresher</option>
+                        <option value="0-1">0-1 Years</option>
+                        <option value="1-3">1-3 Years</option>
+                        <option value="3-5">3-5 Years</option>
+                        <option value="5+">5+ Years</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="previous-company">Previous Company:</label>
+                    <br>
+
+                    <input type="text" id="previous-company" name="previous-company"
+                        placeholder="Enter previous company name">
+
+                </fieldset>
+
+                <br>
+
+                <!-- Resume Upload -->
+
+                <fieldset>
+
+                    <legend>Upload Your Resume</legend>
+
+                    <br>
+
+                    <label for="resume">Choose Resume:</label>
+                    <br>
+
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+                    <p>Accepted formats: PDF, DOC, DOCX</p>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Account Information -->
+
+                <fieldset>
+
+                    <legend>Account Information</legend>
+
+                    <br>
+
+                    <label for="username">Username:</label>
+                    <br>
+
+                    <input type="text" id="username" name="username" placeholder="Choose a username" minlength="4"
+                        required autocomplete="username">
+
+                    <br><br>
+
+                    <label for="password">Create Password:</label>
+                    <br>
+
+                    <input type="password" id="password" name="password" placeholder="Create a password" minlength="8"
+                        required autocomplete="new-password">
+
+                    <br><br>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <br>
+
+                    <input type="password" id="confirm-password" name="confirm-password"
+                        placeholder="Confirm your password" minlength="8" required autocomplete="new-password">
+
+                </fieldset>
+
+                <br>
+
+                <!-- Terms and Conditions -->
+
+                <section>
+
+                    <input type="checkbox" id="terms" name="terms" value="accepted" required>
+
+                    <label for="terms">
+                        I agree to the Terms and Conditions
+                        and Privacy Policy.
+                    </label>
+
+                </section>
+
+                <br>
+
+                <button type="submit">Create Account</button>
+
+                <button type="reset">Reset Form</button>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <!-- Login Link -->
+
+        <section>
+
+            <p>
+                Already have an account?
+                <a href="login.html">Login Here</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>CareerConnect</h2>
+
+        <p>Connecting Talent With Opportunities.</p>
+
+        <nav>
+
+            <a href="../index.html">Home</a> |
+            <a href="jobs.html">Find Jobs</a> |
+            <a href="companies.html">Companies</a> |
+            <a href="contact.html">Contact Us</a>
+
+        </nav>
+
+        <p> 2026 CareerConnect. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
